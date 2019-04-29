@@ -1,4 +1,4 @@
-go-mod-tidy
+# go-mod-tidy
 
 ## 下载
 go get github.com/seamounts/go-mod-tidy
