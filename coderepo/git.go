@@ -7,8 +7,8 @@ package coderepo
 import (
 	"bytes"
 	"fmt"
-	"go-mod-tidy/lockedfile"
-	"go-mod-tidy/par"
+	"github.com/seamounts/go-mod-tidy/lockedfile"
+	"github.com/seamounts/go-mod-tidy/par"
 	"io"
 	"io/ioutil"
 	"os"

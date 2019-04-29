@@ -3,8 +3,8 @@ package cmd
 import (
 	"bytes"
 	"fmt"
+	"github.com/seamounts/go-mod-tidy/coderepo"
 	"github.com/spf13/cobra"
-	"go-mod-tidy/coderepo"
 	"os"
 	"os/exec"
 	"strings"

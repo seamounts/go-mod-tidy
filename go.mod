@@ -1,4 +1,4 @@
-module go-mod-tidy
+module github.com/seamounts/go-mod-tidy
 
 go 1.12
 

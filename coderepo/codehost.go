@@ -10,7 +10,7 @@ import (
 	"bytes"
 	"crypto/sha256"
 	"fmt"
-	"go-mod-tidy/lockedfile"
+	"github.com/seamounts/go-mod-tidy/lockedfile"
 	"io"
 	"io/ioutil"
 	"os"
@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"go-mod-tidy/str"
+	"github.com/seamounts/go-mod-tidy/str"
 )
 
 // A Repo represents a code hosting source.

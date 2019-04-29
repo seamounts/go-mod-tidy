@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-mod-tidy/cmd"
+	"github.com/seamounts/go-mod-tidy/cmd"
 )
 
 func main() {

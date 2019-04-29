@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"fmt"
-	"go-mod-tidy/coderepo"
+	"github.com/seamounts/go-mod-tidy/coderepo"
 )
 
 var (

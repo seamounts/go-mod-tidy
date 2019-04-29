@@ -9,7 +9,7 @@ package lockedfile
 import (
 	"os"
 
-	"go-mod-tidy/lockedfile/internal/filelock"
+	"github.com/seamounts/go-mod-tidy/lockedfile/internal/filelock"
 )
 
 func openFile(name string, flag int, perm os.FileMode) (*os.File, error) {
