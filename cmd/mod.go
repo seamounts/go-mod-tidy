@@ -28,6 +28,9 @@ var (
 		"golang.org/x/term":           "github.com/golang/term",
 		"golang.org/x/time":           "github.com/golang/time",
 		"golang.org/x/vgo":            "github.com/golang/vgo",
+		"golang.org/x/image":          "github.com/golang/image",
+		"golang.org/x/exp":            "github.com/golang/exp",
+		"golang.org/x/mobile":         "github.com/golang/mobile",
 	}
 )
 
