@@ -25,10 +25,11 @@ var (
 		"golang.org/x/sys":            "github.com/golang/sys",
 		"golang.org/x/text":           "github.com/golang/text",
 		"golang.org/x/lint":           "github.com/golang/lint",
+		"golang.org/x/term":           "github.com/golang/term",
+		"golang.org/x/time":           "github.com/golang/time",
+		"golang.org/x/vgo":            "github.com/golang/vgo",
 	}
 )
-
-
 
 func init() {
 	coderepo.WorkRoot = "/tmp/vcswork"
@@ -56,7 +57,6 @@ func Run() {
 		m.replace(FailedPkgs)
 	}
 }
-
 
 type ModExt map[string]string
 
@@ -109,8 +109,6 @@ func (m ModExt) Tidy() (map[string]string, error) {
 	return FailedPkgs, nil
 }
 
-
-
 func (m ModExt) replace(modRepos map[string]string) {
 	for originRepo, version := range modRepos {
 		if version != "" {
@@ -134,7 +132,6 @@ func (m ModExt) replace(modRepos map[string]string) {
 		m.save()
 	}
 }
-
 
 func (m ModExt) save() {
 	log.Println("replace mod...")
