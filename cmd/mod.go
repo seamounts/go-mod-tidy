@@ -3,12 +3,13 @@ package cmd
 import (
 	"bufio"
 	"fmt"
-	"github.com/seamounts/go-mod-tidy/coderepo"
-	"github.com/spf13/cobra"
 	"io"
 	"log"
 	"os/exec"
 	"strings"
+
+	"github.com/seamounts/go-mod-tidy/coderepo"
+	"github.com/spf13/cobra"
 )
 
 var (
@@ -16,21 +17,23 @@ var (
 		"google.golang.org/grpc":      "github.com/grpc/grpc-go",
 		"google.golang.org/appengine": "github.com/golang/appengine",
 		"google.golang.org/genproto":  "github.com/google/go-genproto",
-		"cloud.google.com/go":         "github.com/googleapis/google-cloud-go",
-		"golang.org/x/crypto":         "github.com/golang/crypto",
-		"golang.org/x/net":            "github.com/golang/net",
-		"golang.org/x/oauth2":         "github.com/golang/oauth2",
-		"golang.org/x/sync":           "github.com/golang/sync",
-		"golang.org/x/tools":          "github.com/golang/tools",
-		"golang.org/x/sys":            "github.com/golang/sys",
-		"golang.org/x/text":           "github.com/golang/text",
-		"golang.org/x/lint":           "github.com/golang/lint",
-		"golang.org/x/term":           "github.com/golang/term",
-		"golang.org/x/time":           "github.com/golang/time",
-		"golang.org/x/vgo":            "github.com/golang/vgo",
-		"golang.org/x/image":          "github.com/golang/image",
-		"golang.org/x/exp":            "github.com/golang/exp",
-		"golang.org/x/mobile":         "github.com/golang/mobile",
+		"google.golang.org/api":       "github.com/googleapis/google-api-go-client",
+
+		"cloud.google.com/go": "github.com/googleapis/google-cloud-go",
+		"golang.org/x/crypto": "github.com/golang/crypto",
+		"golang.org/x/net":    "github.com/golang/net",
+		"golang.org/x/oauth2": "github.com/golang/oauth2",
+		"golang.org/x/sync":   "github.com/golang/sync",
+		"golang.org/x/tools":  "github.com/golang/tools",
+		"golang.org/x/sys":    "github.com/golang/sys",
+		"golang.org/x/text":   "github.com/golang/text",
+		"golang.org/x/lint":   "github.com/golang/lint",
+		"golang.org/x/term":   "github.com/golang/term",
+		"golang.org/x/time":   "github.com/golang/time",
+		"golang.org/x/vgo":    "github.com/golang/vgo",
+		"golang.org/x/image":  "github.com/golang/image",
+		"golang.org/x/exp":    "github.com/golang/exp",
+		"golang.org/x/mobile": "github.com/golang/mobile",
 	}
 )
 
